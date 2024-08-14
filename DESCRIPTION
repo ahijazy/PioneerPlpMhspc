@@ -1,0 +1,22 @@
+Package: PioneerPlpMhspc
+Title: prediction of symptomatic progression and death for mhspc patients
+Version: 0.0.1
+Authors@R: 
+    person("Ayman", "Hijazy", , "ahijazy@eisbm.org", role = c("aut", "cre"))
+Description: Execute an OHDSI PLP studi.y
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+depends:
+    R (>= 3.5.0),
+    PatientlevelPrediction (>= 6.0.0),
+    DatabaseConnector (>= 3.0.0),
+    SqlRender (>= 1.6.0),
+    featureExtraction (>= 2.2.0),
+    CohortMethod (>= 4.0.0),
+Imports:
+    dplyr,
+    ggplot2
+    
