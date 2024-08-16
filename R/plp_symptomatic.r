@@ -1,4 +1,4 @@
-
+c
 execute_plp_symptomatic=function(connectionDetails=connectionDetails,
                     cdmDatabaseSchema=cdmDatabaseSchema,
                     vocabularyDatabaseSchema = cdmDatabaseSchema,
@@ -315,7 +315,7 @@ model7=PatientLevelPrediction::createModelDesign(
     featureEngineeringSettings = NULL,
     sampleSettings = NULL, 
     preprocessSettings = preprocessSettings,
-    modelSettings = PatientLevelPrediction::setCox(), 
+    modelSettings = PatientLevelPrediction::setCoxModel(), 
     splitSettings = splitSettings)
 
 model8=PatientLevelPrediction::createModelDesign(
@@ -327,7 +327,7 @@ model8=PatientLevelPrediction::createModelDesign(
     featureEngineeringSettings = NULL,
     sampleSettings = NULL, 
     preprocessSettings = preprocessSettings,
-    modelSettings = PatientLevelPrediction::setCox(), 
+    modelSettings = PatientLevelPrediction::setCoxModel(), 
     splitSettings = splitSettings)
 
 model9=PatientLevelPrediction::createModelDesign(
@@ -339,7 +339,7 @@ model9=PatientLevelPrediction::createModelDesign(
     featureEngineeringSettings = NULL,
     sampleSettings = NULL, 
     preprocessSettings = preprocessSettings,
-    modelSettings = PatientLevelPrediction::setCox(), 
+    modelSettings = PatientLevelPrediction::setCoxModel(), 
     splitSettings = splitSettings)
 
 #run the models
