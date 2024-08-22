@@ -55,7 +55,7 @@ DatabaseDetails=PatientLevelPrediction::createDatabaseDetails (connectionDetails
 #Covariate setting 1: 
 
 # Without index information
-covSet<- createCovariateSettings(
+covSet<-FeatureExtraction::createCovariateSettings(
     	useDemographicsGender = TRUE, 
 			useDemographicsAge = TRUE,
 			useDemographicsAgeGroup = TRUE, 
