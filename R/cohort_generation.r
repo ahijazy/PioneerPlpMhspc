@@ -100,7 +100,7 @@ cohort_generation <- function(connectionDetails,
     # Next create the tables on the database
     CohortGenerator::createCohortTables(
         connectionDetails = connectionDetails,
-        cohortTableNames = cohortTable,
+        cohortTableNames = cohortTableNames,
         cohortDatabaseSchema = cohortDatabaseSchema,
         incremental = TRUE
     )
@@ -125,7 +125,7 @@ cohort_generation <- function(connectionDetails,
             connectionDetails = connectionDetails,
             cdmDatabaseSchema = cdmDatabaseSchema,
             cohortDatabaseSchema = cohortDatabaseSchema,
-            cohortTableNames = CohortGenerator::getCohortTableNames(),
+            cohortTableNames = cohortTableNames,
             cohortDefinitionSet = cohortDefinitionSet,
             tempEmulationSchema = tempEmulationSchema,
             incrementalFolder = incrementalFolder,
